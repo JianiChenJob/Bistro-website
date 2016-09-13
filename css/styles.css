@@ -163,6 +163,45 @@ sized images for different screen sizes. But here the image
 }
 /*End Home Page*/
 
+/*Menu Categories Page*/
+.category-tile {
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-title + div /*next sibling div of #menu-categories-title*/{
+  margin-bottom: 50px;
+}
+/*End Menu Categories Page*/
+
+/*Single Categories Page*/
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+
+.menu-item-tile hr {
+  width: 80%;
+}
+/*End Single Categories Page*/
+
 /*********** Large devices only ***********/
 @media (min-width: 1200px) {
   .container .jumbotron {
@@ -276,6 +315,15 @@ sized images for different screen sizes. But here the image
     width: 280;
     margin: 0 auto 15px; /*top right bottom left(if only define
      right, it applies to left automatically.*/
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
   }
   /* End Home page */
 }
