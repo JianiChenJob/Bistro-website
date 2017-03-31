@@ -39,8 +39,13 @@
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
           <ul id="nav-list" class="nav navbar-nav navbar-right"><!-- navbar-right --navbar will float all the way to the right -->
-            <li class="active">
-              <a href="menu-categories.html">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home
+              </a>
+            </li>
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();">
                 <span class="glyphicon glyphicon-cutlery"></span><!-- glyphicon glyphicon-cutlery is a icon font which is a fork and knife. -->
                 <br class="hidden-xs"> Menu</a><!-- hidden-xs means the break goes away when the screen size is extra small -->
             </li>
@@ -74,27 +79,7 @@
   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
   <div id="main-content" class="container">
-    <div class="jumbotron">
-      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs"> <!-- img-responsive means the size of the image will change proportionally as the width of the browser changes. visible-xs means this image is visible when the screen is extra small-->
-      
-    </div>
-
-    <div id="home-tiles" class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>  
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3635647,-76.7138402,17z/data=!3m1!4b1!4m5!3m4!1s0x89c81a14e7817803:0xab20a0e99daa17ea!8m2!3d39.3635606!4d-76.7116515" target="_blank">
-          <div id="map-tile">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.676374948233!2d-76.71384018429846!3d39.36356472693517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid+Chu&#39;s+China+Bistro!5e0!3m2!1sen!2sus!4v1473443613945" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <span>map</span>
-          </div>
-        </a>
-      </div>
-    </div><!-- End of #home-tiles-->
+    
   </div><!-- End of #main-content-->
 
   <footer class="panel-footer">
@@ -127,6 +112,7 @@
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
